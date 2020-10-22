@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сhart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="chart">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="options">
+            <form name="form" class="form">
+                <select class="form-item select" name="list1">
+                    <option>Выберите валюту</option>
+                    <option value="145">USD</option>
+                    <option value="292">EUR</option>
+                    <option value="298">RUR</option>
+                </select>
+                <input class="form-item" type="date" data-date="from" сlass="start-date">
+                <input class="form-item" type="date" data-date="to" class="end-date">
+                <button class="form-item submit">Вывести</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
